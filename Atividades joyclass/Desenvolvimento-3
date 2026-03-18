@@ -1,0 +1,29 @@
+# Escreva um código que imprima todos os números exceto o número 13.
+
+for i in range(20, 0, -1):
+    if (i == 13):
+        continue
+    print(i)
+
+# Escreva mais dois códigos que resolvam o mesmo problema, mas dessa vez 
+# usando os outros dois tipos de laços de repetição aprendidos. 1-Laço while:
+
+Andar = 20
+while (Andar > 0):
+    if (Andar !=13):
+        print(Andar)
+    Andar -= 1 
+    
+
+# Escreva mais dois códigos que resolvam o mesmo problema, mas dessa vez 
+# usando os outros dois tipos de laços de repetição aprendidos. 1-dowhile:
+
+Contador = 20
+while True:
+    if Contador != 13:
+        print (Contador)
+    Contador -= 1
+    if Contador == 0:
+        break
+
+
