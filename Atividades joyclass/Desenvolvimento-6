@@ -1,0 +1,20 @@
+def cadastrar_usuario():
+    nome = input("Digite seu nome completo: ")
+    
+    while True:
+        try:
+            ano_nascimento = int(input("Digite seu ano de nascimento (entre 1922 e 2021): "))
+            
+            if 1922 <= ano_nascimento <= 2021:
+                idade = 2022 - ano_nascimento
+                print(f"\n--- Cadastro Realizado ---")
+                print(f"Nome: {nome}")
+                print(f"Idade em 2022: {idade} anos")
+                break 
+            else:
+                print("Erro: O ano deve estar entre 1922 e 2021.")
+                
+        except ValueError:
+            print("Erro: Por favor, digite um valor numérico válido para o ano.")
+
+cadastrar_usuario()
